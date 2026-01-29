@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "node -e \"if (!process.env.CI) require('husky').install()\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
